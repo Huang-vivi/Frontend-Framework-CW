@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INM 320 Frontend Framework</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 px-0 sidebar-dark">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-2 pt-2 text-white min-vh-100">
+          <!-- Sidebar Title -->
+          <div class="my-3 text-center">
+            <!-- add me-2 for space / fs-3 for icon-size -->
+            <img src="/assets/css/logo.svg"
+            alt="Dashboard Kit Logo" class="img-fluid" style="max-height: 40px;">
+            <span class="fs-5 fw-bold d-none d-sm-inline">Dashboard Kit</span>
+          </div>
+          <!-- Sidebar content -->
+          <ul class="nav  flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">
+            <li class="nav-item w-100">
+              <a href="#" class="nav-link px-3 active"> <i class="bi bi-pie-chart-fill me-2"></i> <span
+                  class="d-none d-sm-inline">Overview</span>
+              </a>
+            </li>
+
+            <li class="nav-item w-100">
+              <a href="#" class="nav-link px-3">
+                <i class="bi bi-ticket-fill me-2 text-secondary"></i>
+                <span class="d-none d-sm-inline">Tickets</span>
+              </a>
+            </li>
+            <li class="nav-item w-100">
+              <a href="#" class="nav-link px-3">
+                <i class="bi bi-lightbulb-fill me-2 text-secondary"></i> <span class="d-none d-sm-inline">Ideas</span>
+              </a>
+            </li>
+
+            <li class="nav-item w-100">
+              <a href="#" class="nav-link px-3">
+                <i class="bi bi-people-fill me-2 text-secondary"></i> <span
+                  class="d-none d-sm-inline">Contacts</span>
+              </a>
+            </li>
+
+            <li class="nav-item w-100">
+              <a href="#" class="nav-link px-3">
+                <i class="bi bi-people-fill me-2 text-secondary"></i> <span class="d-none d-sm-inline">Agents</span>
+              </a>
+            </li>
+
+            <li class="nav-item w-100">
+              <a href="#" class="nav-link px-3">
+                <i class="bi bi-journal-text me-2 text-secondary"></i> <span class="d-none d-sm-inline">Articles</span>
+              </a>
+            </li>
+            <hr class="my-3 border-secondary opacity-25 w-100 mx-auto">
+            <li class="nav-item w-100 ">
+              <a href="#" class="nav-link px-3">
+                <i class="bi bi-gear-fill me-2 text-secondary"></i> <span class="d-none d-sm-inline">Settings</span>
+              </a>
+            </li>
+
+            <li class="nav-item w-100">
+              <a href="#" class="nav-link px-3">
+                <i class="bi bi-credit-card-fill me-2 text-secondary"></i> <span
+                  class="d-none d-sm-inline">Subscription</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="col py-3">
+
+        <header class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+          <h1 class="h2">Overview</h1>
+          <div class="d-flex align-items-center">
+            <i class="bi bi-search me-3 h5"></i>
+            <i class="bi bi-bell-fill me-3 h5"></i>
+            <span class="me-2 d-none d-sm-inline">ChingWen Huang</span>
+            <img src="/assets/css/chingwen.JPG" class="rounded-circle cw-avatar" alt="ChingWen Avatar" width="40" height="40">
+          </div>
+        </header>
+
+        <div class="row mb-4 g-4">
+          <div class="col-md-3">
+            <div class="card text-center border-0 shadow-sm p-3">
+              <div class="card-body">
+                <h6 class="card-subtitle text-muted mb-1">Unresolved</h6>
+                <h3 class="card-title fw-bold">60</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center shadow-sm p-3 border-info border-3 border-bottom-0 border-top-0 border-end-0"
+              style="border-color: #4f68b0 !important;">
+              <div class="card-body">
+                <h6 class="card-subtitle text-muted mb-1">Overdue</h6>
+                <h3 class="card-title fw-bold" style="color: #4f68b0;">16</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center border-0 shadow-sm p-3">
+              <div class="card-body">
+                <h6 class="card-subtitle text-muted mb-1">Open</h6>
+                <h3 class="card-title fw-bold">43</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center border-0 shadow-sm p-3">
+              <div class="card-body">
+                <h6 class="card-subtitle text-muted mb-1">On hold</h6>
+                <h3 class="card-title fw-bold">64</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-3">
+              <h5 class="card-title fw-bold">Today's trends</h5>
+              <p class="card-subtitle text-muted small mb-3">as of 25 May 2025, 09:41 PM</p>
+              <div
+                style="height: 300px; background-color: #f7f9fc; display: flex; align-items: center; justify-content: center; color: #aaa;">
+                [這裡放置 Chart.js 或其他圖表]
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm">
+              <div class="list-group list-group-flush text-center">
+                <div class="list-group-item py-3">
+                  <h6 class="text-muted">Resolved</h6>
+                  <h5 class="fw-bold">449</h5>
+                </div>
+                <div class="list-group-item py-3">
+                  <h6 class="text-muted">Received</h6>
+                  <h5 class="fw-bold">426</h5>
+                </div>
+                <div class="list-group-item py-3">
+                  <h6 class="text-muted">Average first response time</h6>
+                  <h5 class="fw-bold">33m</h5>
+                </div>
+                <div class="list-group-item py-3">
+                  <h6 class="text-muted">Average response time</h6>
+                  <h5 class="fw-bold">3h 8m</h5>
+                </div>
+                <div class="list-group-item py-3">
+                  <h6 class="text-muted">Resolution within SLA</h6>
+                  <h5 class="fw-bold text-success">94%</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center fw-bold">
+                <span>Unresolved tickets</span>
+                <a href="#" class="text-decoration-none small text-primary">View details</a>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between">
+                  <span class="text-muted">Group: Support</span>
+                  <span class="fw-bold">4238</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Waiting on Feature Request</span>
+                  <span class="fw-bold">1005</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center fw-bold">
+                <span>Tasks</span>
+                <a href="#" class="text-decoration-none small text-primary">View all</a>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span class="text-muted">Today</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <a href="#" class="text-decoration-none text-primary">Create new task</a>
+                  <span class="h5 mb-0 text-primary">+</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="task1">
+                  <label class="form-check-label flex-grow-1" for="task1">Finish ticket update</label>
+                  <span class="badge bg-danger">URGENT</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
