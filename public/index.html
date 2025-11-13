@@ -14,17 +14,17 @@
 <body>
   <div class="container-fluid">
     <div class="row flex-nowrap">
-      <div class="col-auto col-md-3 px-0 sidebar-dark">
-        <div class="d-flex flex-column align-items-center align-items-sm-start px-2 pt-2 text-white min-vh-100">
+      <!-- Sidebar col-md-3 for sidebar width -->
+      <div class="col-3 px-0 cw-sidebar-dark">
+        <div class="d-flex flex-column align-items-center px-2 pt-2 text-white min-vh-100">
           <!-- Sidebar Title -->
           <div class="my-3 text-center">
             <!-- add me-2 for space / fs-3 for icon-size -->
-            <img src="/assets/css/logo.svg"
-            alt="Dashboard Kit Logo" class="img-fluid" style="max-height: 40px;">
-            <span class="fs-5 fw-bold d-none d-sm-inline">Dashboard Kit</span>
+            <img src="/assets/css/logo.svg" alt="Dashboard Kit Logo" class="img-fluid" style="max-height: 40px;">
+            <span class="fs-5 fw-bold d-none d-sm-inline px-2 ">Dashboard Kit</span>
           </div>
           <!-- Sidebar content -->
-          <ul class="nav  flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">
+          <ul class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">
             <li class="nav-item w-100">
               <a href="#" class="nav-link px-3 active"> <i class="bi bi-pie-chart-fill me-2"></i> <span
                   class="d-none d-sm-inline">Overview</span>
@@ -45,8 +45,7 @@
 
             <li class="nav-item w-100">
               <a href="#" class="nav-link px-3">
-                <i class="bi bi-people-fill me-2 text-secondary"></i> <span
-                  class="d-none d-sm-inline">Contacts</span>
+                <i class="bi bi-people-fill me-2 text-secondary"></i> <span class="d-none d-sm-inline">Contacts</span>
               </a>
             </li>
 
@@ -79,87 +78,86 @@
         </div>
       </div>
 
-      <div class="col py-3">
-
-        <header class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+      <div class="col p-4">
+        <header class="d-flex justify-content-between align-items-center mb-4 pb-3">
           <h1 class="h2">Overview</h1>
           <div class="d-flex align-items-center">
-            <i class="bi bi-search me-3 h5"></i>
-            <i class="bi bi-bell-fill me-3 h5"></i>
-            <span class="me-2 d-none d-sm-inline">ChingWen Huang</span>
-            <img src="/assets/css/chingwen.JPG" class="rounded-circle cw-avatar" alt="ChingWen Avatar" width="40" height="40">
+            <i class="bi bi-search me-3 fs-5"></i>
+            <i class="bi bi-bell-fill me-3 fs-5 "></i>
+            <span class="vr mx-3"></span>
+            <span class="m-2 d-none d-sm-inline">ChingWen Huang</span>
+            <img src="/assets/css/chingwen.JPG" class="rounded-circle cw-avatar" alt="ChingWen Avatar" width="40"
+              height="40">
           </div>
         </header>
 
         <div class="row mb-4 g-4">
           <div class="col-md-3">
-            <div class="card text-center border-0 shadow-sm p-3">
+            <div class="card text-center shadow-sm p-3 cw-number-card">
               <div class="card-body">
-                <h6 class="card-subtitle text-muted mb-1">Unresolved</h6>
+                <h6 class="card-subtitle  mb-1">Unresolved</h6>
                 <h3 class="card-title fw-bold">60</h3>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card text-center shadow-sm p-3 border-info border-3 border-bottom-0 border-top-0 border-end-0"
-              style="border-color: #4f68b0 !important;">
+            <div class="card text-center shadow-sm p-3 cw-number-card">
               <div class="card-body">
-                <h6 class="card-subtitle text-muted mb-1">Overdue</h6>
-                <h3 class="card-title fw-bold" style="color: #4f68b0;">16</h3>
+                <h6 class="card-subtitle  mb-1">Overdue</h6>
+                <h3 class="card-title fw-bold">16</h3>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card text-center border-0 shadow-sm p-3">
+            <div class="card text-center shadow-sm p-3 cw-number-card">
               <div class="card-body">
-                <h6 class="card-subtitle text-muted mb-1">Open</h6>
+                <h6 class="card-subtitle mb-1">Open</h6>
                 <h3 class="card-title fw-bold">43</h3>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card text-center border-0 shadow-sm p-3">
+            <div class="card text-center shadow-sm p-3 cw-number-card">
               <div class="card-body">
-                <h6 class="card-subtitle text-muted mb-1">On hold</h6>
+                <h6 class="card-subtitle mb-1">On hold</h6>
                 <h3 class="card-title fw-bold">64</h3>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row g-4 mb-4">
-          <div class="col-lg-8">
-            <div class="card border-0 shadow-sm p-3">
-              <h5 class="card-title fw-bold">Today's trends</h5>
+        <div class="row g-0 cw-border mb-4 ">
+          <!-- Right -->
+          <div class="col-lg-8 p-4">
+            <div class="card border-0">
+              <h2 class="card-title cw-h2">Today's trends</h2>
               <p class="card-subtitle text-muted small mb-3">as of 25 May 2025, 09:41 PM</p>
-              <div
-                style="height: 300px; background-color: #f7f9fc; display: flex; align-items: center; justify-content: center; color: #aaa;">
-                [這裡放置 Chart.js 或其他圖表]
+              <div class="cw-chart"> <img src="/assets/images/chart.png" alt="">
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card border-0 shadow-sm">
-              <div class="list-group list-group-flush text-center">
-                <div class="list-group-item py-3">
-                  <h6 class="text-muted">Resolved</h6>
-                  <h5 class="fw-bold">449</h5>
+            <div class="card border-0 shadow-sm h-100">
+              <div class="list-group list-group-flush text-center h-100">
+                <div class="list-group-item py-3 flex-fill ">
+                  <h3 class="cw-secondy-title cw-h3">Resolved</h3>
+                  <h4 class="cw-h4 fw-bold">449</h4>
                 </div>
-                <div class="list-group-item py-3">
-                  <h6 class="text-muted">Received</h6>
-                  <h5 class="fw-bold">426</h5>
+                <div class="list-group-item py-3 flex-fill ">
+                  <h3 class="cw-secondy-title cw-h3">Received</h3>
+                  <h4 class="cw-h4 fw-bold">426</h4>
                 </div>
-                <div class="list-group-item py-3">
-                  <h6 class="text-muted">Average first response time</h6>
-                  <h5 class="fw-bold">33m</h5>
+                <div class="list-group-item py-3 flex-fill ">
+                  <h3 class="cw-secondy-title cw-h3">Average first response time</h3>
+                  <h4 class="cw-h4 fw-bold">33m</h4>
                 </div>
-                <div class="list-group-item py-3">
-                  <h6 class="text-muted">Average response time</h6>
-                  <h5 class="fw-bold">3h 8m</h5>
+                <div class="list-group-item py-3 flex-fill ">
+                  <h3 class="cw-secondy-title cw-h3">Average response time</h3>
+                  <h4 class="cw-h4 fw-bold">3h 8m</h4>
                 </div>
-                <div class="list-group-item py-3">
-                  <h6 class="text-muted">Resolution within SLA</h6>
-                  <h5 class="fw-bold text-success">94%</h5>
+                <div class="list-group-item py-3 flex-fill ">
+                  <h3 class="cw-secondy-title cw-h3">Resolution within SLA</h3>
+                  <h4 class="cw-h4 fw-bold">94%</h4>
                 </div>
               </div>
             </div>
@@ -169,41 +167,54 @@
         <div class="row g-4">
           <div class="col-lg-6">
             <div class="card border-0 shadow-sm">
-              <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center fw-bold">
-                <span>Unresolved tickets</span>
+              <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-column">
+                  <h2 class="cw-h2">Unresolved tickets</h2>
+                  <span class="cw-secondy-title small">Group: Support</span>
+                </div>
                 <a href="#" class="text-decoration-none small text-primary">View details</a>
               </div>
+              <!-- Boostrap List group-->
               <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between">
-                  <span class="text-muted">Group: Support</span>
-                  <span class="fw-bold">4238</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                  <span>Waiting on Feature Request</span>
-                  <span class="fw-bold">1005</span>
-                </li>
+                <li class="list-group-item d-flex justify-content-between">Waiting on Feature Request <span
+                    class="fw-bold">4238</span> </li>
+                <li class="list-group-item d-flex justify-content-between">Awaitin Customer Response <span
+                    class="fw-bold">1005</span> </li>
+                <li class="list-group-item d-flex justify-content-between">Awaiting Developer Fix<span
+                    class="fw-bold">914</span> </li>
+                <li class="list-group-item d-flex justify-content-between">Pending<span class="fw-bold">281</span> </li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="card border-0 shadow-sm">
-              <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center fw-bold">
-                <span>Tasks</span>
-                <a href="#" class="text-decoration-none small text-primary">View all</a>
+              <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-column">
+                  <h2 class="cw-h2">Tasks</h2>
+                  <span class="cw-secondy-title small">Today</span>
+                </div>
+                  <a href="#" class="text-decoration-none small text-primary">View all</a>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <span class="text-muted">Today</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-decoration-none text-primary">Create new task</a>
+                <li class="list-group-item d-flex justify-content-between ">
+                  <span class="cw-secondy-title">Create new task</span>
                   <span class="h5 mb-0 text-primary">+</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <li class="list-group-item d-flex justify-content-between ">
                   <input class="form-check-input me-2" type="checkbox" value="" id="task1">
                   <label class="form-check-label flex-grow-1" for="task1">Finish ticket update</label>
                   <span class="badge bg-danger">URGENT</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between ">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="task1">
+                  <label class="form-check-label flex-grow-1" for="task1">Create new ticket example</label>
+                  <span class="badge bg-danger">New</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between ">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="task1" checked>
+                  <label class="form-check-label flex-grow-1" for="task1">Update ticket report</label>
+                  <span class="badge bg-danger">Default</span>
                 </li>
               </ul>
             </div>
@@ -214,7 +225,7 @@
     </div>
 
 
-    </div>
+  </div>
   </div>
 
 

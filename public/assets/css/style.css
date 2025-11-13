@@ -1,35 +1,68 @@
-/* 側邊欄的深色背景 */
-.sidebar-dark {
-  background-color: #2b3648; /* 接近截圖中的深藍灰色 */
+/* sidebar */
+.cw-sidebar-dark {
+  background-color: #2b3648;
   color: #d1d9e6;
-  min-height: 100vh; /* 讓側邊欄至少佔滿整個視窗高度 */
+  min-height: 100vh;
 }
-/* 導覽列連結的樣式 */
-.sidebar-dark .nav-link {
+
+.cw-sidebar-dark .nav-link {
   color: #d1d9e6;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   border-radius: 0;
 }
-.sidebar-dark .nav-link:hover,
-.sidebar-dark .nav-link.active {
-  background-color: #3e4b61; /* 懸停或選中時的背景色 */
+
+.cw-sidebar-dark .nav-link:hover,
+.cw-sidebar-dark .nav-link.active {
+  background-color: #3e4b61;
   color: white;
-  border-left: 3px solid #007bff; /* 模仿圖中的左側藍線 */
+  border-left: 3px solid #d1d9e6;
 }
 
+
 .sidebar-dark .nav-link i {
-  /* 這裡設定您想要的大小 */
-  /* fs-5 預設約等於 1.25rem */
   font-size: 1.25rem;
 }
 
+/* Nav */
 .cw-avatar {
   object-fit: cover;
   object-position: top;
 }
 
-.nav-pills {
-  --bs-nav-pills-link-active-bg: #9FA2B4 !important;
-  /* --bs-nav-pills-link-active-color:rgba(55, 81, 255, 0.08)!important; */
+
+/* 4-number-card */
+.cw-number-card{
+  border: 0;
+}
+
+.cw-number-card:hover{
+  color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
+}
+
+
+.cw-secondy-title{
+  color: #9FA2B4;
+}
+
+.cw-h2{
+  font-size: 20px;
+}
+
+.cw-h3{
+  font-size: 18px;
+}
+
+.cw-h4{
+  font-size: 22px;
+}
+
+.cw-border{
+  border: 1px solid #d1d9e6;
+  border-radius: 5px;
+}
+
+.cw-chart img{
+  width: 100%;
 }
