@@ -16,33 +16,35 @@
   border-radius: 5px;
 }
 
+/* Modify  Bootstrap design */
+.card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
 /* Sidebar */
 .cw-sidebar-dark {
   background-color: #2b3648;
   color: #d1d9e6;
   min-height: 100vh;
 }
-
+.cw-sidebar-dark img {
+  max-height: 40px;
+}
 .cw-sidebar-dark .nav-link {
   color: #d1d9e6;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   border-radius: 0;
 }
-
-.cw-sidebar-dark .nav-link:hover,
-.cw-sidebar-dark .nav-link.active {
-  background-color: #3e4b61;
-  color: white;
-  border-left: 3px solid #d1d9e6;
-}
-
 .cw-sidebar-dark .nav-link i {
   font-size: 1.25rem;
 }
-
-.cw-sidebar-dark img {
-  max-height: 40px;
+.cw-sidebar-dark .nav-link.active, .cw-sidebar-dark .nav-link:hover {
+  background-color: #3e4b61;
+  color: #fff;
+  border-left: 3px solid #d1d9e6;
 }
 
 /* Nav */
@@ -55,10 +57,9 @@
 .cw-number-card {
   border: 0;
 }
-
 .cw-number-card:hover {
-  color: --bs-primary;
-  border: 1px solid --bs-primary;
+  color: #1462e8;
+  border: 1px solid #1462e8;
 }
 
 .cw-secondy-title {
@@ -85,9 +86,8 @@
 /* RWD */
 @media (min-width: 768px) {
   .cw-secondy-title {
-    color: #9FA2B4;
+    color: #9fa2b4;
   }
 }
-/* Modify default Bootstrap design */
 
 /*# sourceMappingURL=style.css.map */
