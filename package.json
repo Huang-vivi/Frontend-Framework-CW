@@ -2,14 +2,17 @@
   "name": "inm320-frontend-framework",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server --baseDir=\"public\""
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "vivistart": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run vivistart\" \"npm run goservergo\""
   },
   "author": "Ching-Wen Huang",
   "license": "private",
-  "private":"true",
+  "private": "true",
   "description": "",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.94.1"
   }
 }
